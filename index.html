@@ -210,7 +210,7 @@
                   Programming
                 </h3>
                 <div class="meter emerald">
-                  <span style="width: 90%">
+                  <span style="width: 60%">
                     <span>
                       HTML
                     </span>
@@ -224,7 +224,7 @@
                   </span>
                 </div>
                 <div class="meter emerald">
-                  <span style="width: 70%">
+                  <span style="width: 40%">
                     <span>
                       JAVASCRIPT
                     </span>
@@ -305,85 +305,78 @@
           <!-- Projects Tab Data -->
           <div id="portfolio">
             <section class="clearfix">
+             
               <div class="project-section">
+                 <!-- Project 1 -->
                 <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                  <div class="project-img-container" onclick="showModal('Wix portfolio', 'A portfolio built on Wix.', 'khullets13.wixsite.com/alton-john-s--amoden', 'HTML, CSS, JavaScript').style.display='block'">
                     <img src="./images/floor.jpg" alt="project image">
                   </div>
-                  <p class="project-title">Project Title</p>
+                  <p class="project-title">Wix portfolio</p>
                 </div>
+                
+                <!-- Project 2 -->
                 <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                  <div class="project-img-container" onclick="showModal('Figma LMS wireframing', 'Wireframes for a Learning Management System designed in Figma.', 'www.figma.com/design/fq81YXJIMM0aDYRVjMWXkS/Learning-Management-System?node-id=309-759&t=ouowUC5139VpZATY-1', 'Figma').style.display='block'">
                     <img src="./images/floor.jpg" alt="project image">
                   </div>
-                  <p class="project-title">Project Title</p>
+                  <p class="project-title">Figma LMS wireframing</p>
                 </div>
+              
+                <!-- Project 3 -->
                 <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                  <div class="project-img-container" onclick="showModal('Figma E-com wireframing', 'Wireframes for an E-commerce site designed in Figma.', 'www.figma.com/design/sa7flS7vJiNoIziS7C9MCD/Finals-UX-Design?node-id=0-1&t=zE4SH9F0TK1UpIq8-1', 'Figma').style.display='block'">
                     <img src="./images/floor.jpg" alt="project image">
                   </div>
-                  <p class="project-title">Project Title</p>
+                  <p class="project-title">Figma E-com wireframing</p>
                 </div>
+              
+                <!-- Project 4 -->
                 <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                  <div class="project-img-container" onclick="showModal('C++ Array Presentation', 'A presentation explaining C++ arrays.', 'www.canva.com/design/DAFiU2Zw18A/1rjg8DZlT5dHWQsjOVXxEQ/edit?utm_content=DAFiU2Zw18A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton', 'C++, PowerPoint').style.display='block'">
                     <img src="./images/floor.jpg" alt="project image">
                   </div>
-                  <p class="project-title">Project Title</p>
+                  <p class="project-title">C++ Array Presentation</p>
                 </div>
-                <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
-                    <img src="./images/floor.jpg" alt="project image">
-                  </div>
-                  <p class="project-title">Project Title</p>
-                </div>
-                <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
-                    <img src="./images/floor.jpg" alt="project image">
-                  </div>
-                  <p class="project-title">Project Title</p>
-                </div>
-                <div class="project-container">
-                  <div class="project-img-container"onclick="document.getElementById('modal-wrapper').style.display='block'">
-                    <img src="./images/floor.jpg" alt="project image">
-                  </div>
-                  <p class="project-title">Project Title</p>
-                </div>
-                <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
-                    <img src="./images/floor.jpg" alt="project image">
-                  </div>
-                  <p class="project-title">Project Title</p>
-                </div>
-                <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-wrapper').style.display='block'">
-                    <img src="./images/floor.jpg" alt="project image">
-                  </div>
-                  <p class="project-title">Project Title</p>
-                </div>
-              </div>
-              <div id="modal-wrapper" class="modal">
-
-                <form class="modal-content animate">
-
-                  <div class="imgcontainer">
-                    <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
-                    <img src="images/floor.jpg" alt="project" class="avatar">
-                    <h1 class="project_details" style="text-align:center">Project Details</h1>
-                  </div>
-
-                  <div class="container">
-                    <input type="text" placeholder="Project Name" name="uname" readonly>
-                    <textarea class="project_description" rows="3" placeholder="Project Description" readonly></textarea>
-                    <input type="url" placeholder="Project Link"readonly>
-                    <input type="text" placeholder="Languages used" readonly>
-                    <button class="project_submit" type="submit">Submit</button>
-                  </div>
-
-                </form>
-
               </div>
             </section>
+          
+            <!-- Modal Wrapper -->
+            <div id="modal-wrapper" class="modal">
+              <form class="modal-content animate">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                  <img src="images/floor.jpg" alt="project" class="avatar">
+                  <h1 class="project_details" style="text-align:center">Project Details</h1>
+                </div>
+                <div class="container">
+                  <!-- Project Name (read-only) -->
+                  <input type="text" id="modal-project-name" placeholder="Project Name" name="uname" readonly>
+                  <!-- Project Description (read-only) -->
+                  <textarea class="project_description" id="modal-project-description" rows="3" placeholder="Project Description" readonly></textarea>
+                  <!-- Project Link (read-only) -->
+                  <input type="url" id="modal-project-link" placeholder="Project Link" readonly>
+                  <!-- Languages Used (read-only) -->
+                  <input type="text" id="modal-languages" placeholder="Languages Used" readonly>
+                </div>
+              </form>
+            </div>
           </div>
+          <script>
+            // Function to show the modal with project details dynamically
+            function showModal(projectName, projectDescription, projectLink, languagesUsed) {
+              document.getElementById('modal-wrapper').style.display = 'block';
+             
+              
+              // Set the modal content dynamically
+              document.getElementById('modal-project-name').value = projectName;
+              document.getElementById('modal-project-description').value = projectDescription;
+              document.getElementById('modal-project-link').value = projectLink;
+              document.getElementById('modal-languages').value = languagesUsed;
+            }
+          </script>
+          
+          
           <!-- End Projects tab -->
           <!-- ----------------------------------------------------------------------------------- -->
           <!-- Contact Tab Data -->
@@ -441,6 +434,8 @@
           <!-- ----------------------------------------------------------------------------------- -->
         </div>
       </div>
+
+    
 </body>
 
 </html>
